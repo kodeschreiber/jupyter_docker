@@ -1,11 +1,12 @@
-FROM ubuntu:20.04
+FROM debian:10
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
 RUN apt install -y apt-utils
 RUN apt install -y git 
 RUN apt install -y python3
 RUN apt install -y python3-pip
-RUN apt install -y firefox
+#RUN apt install -y firefox
+RUN apt install -y chromium
 RUN apt install -y wmctrl
 RUN pip3 install jupyterlab
 RUN useradd -ms /bin/bash ubuntu

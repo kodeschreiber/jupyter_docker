@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t jl:1.1 .
+docker build -t jl:1.2 .
